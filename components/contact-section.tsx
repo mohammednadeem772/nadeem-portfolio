@@ -20,7 +20,7 @@ const contacts = [
     icon: MessageCircle,
     label: "WhatsApp",
     value: "Send a message",
-    href: "https://wa.me/",
+    href: "https://wa.me/917418828073?text=Hi%20Nadeem%2C%20I%20came%20across%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20regarding%20an%20opportunity.",
   },
 ]
 
