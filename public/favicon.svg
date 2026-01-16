@@ -1,0 +1,19 @@
+<svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left bracket [ -->
+  <path d="M8 12 L18 12 L18 16 L12 16 L12 64 L18 64 L18 68 L8 68 L8 12Z" fill="#f5f9fb"/>
+  
+  <!-- M -->
+  <path d="M28 24 L28 56 L32 56 L32 32 L40 44 L48 32 L48 56 L52 56 L52 24 L48 24 L40 38 L32 24 L28 24Z" fill="#f5f9fb"/>
+  
+  <!-- N -->
+  <path d="M58 24 L58 56 L62 56 L62 34 L74 56 L78 56 L78 24 L74 24 L74 46 L62 24 L58 24Z" fill="#f5f9fb"/>
+  
+  <!-- S -->
+  <path d="M84 24 L84 28 L96 28 L96 36 L84 36 L84 56 L100 56 L100 52 L88 52 L88 40 L100 40 L100 24 L84 24Z" fill="#f5f9fb"/>
+  
+  <!-- Right bracket ] -->
+  <path d="M112 12 L102 12 L102 16 L108 16 L108 64 L102 64 L102 68 L112 68 L112 12Z" fill="#f5f9fb"/>
+  
+  <!-- Cursor arrow -->
+  <path d="M108 66 L108 76 L112 73 L114 78 L116 77 L114 72 L118 72 L108 66Z" fill="#f5f9fb"/>
+</svg>
