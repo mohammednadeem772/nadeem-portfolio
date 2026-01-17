@@ -7,112 +7,137 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const projects = [
   {
-    title: "Walking and Talking – Collaboration Platform",
-    problem: "Production issues and feature gaps in an active platform.",
-    solution: "Fixed bugs and enhanced backend features.",
-    tech: ["Python", "Django", "MySQL", "React", "Ionic"],
+    title: "Green Story – Sustainability Platform",
+    problem:
+      "Sustainability and lifecycle data was fragmented across multiple systems, making it difficult for brands to generate accurate reports and meet compliance requirements.",
+    solution:
+      "Built scalable backend services and dashboards to centralize lifecycle assessment and supply-chain traceability data.",
+    tech: ["Node.js", "NestJS", "Next.js", "TypeORM", "PostgreSQL"],
     details:
-      "Worked on Django-based backend to fix production issues and add new features for an organization culture and collaboration platform.",
+      "Contributed to backend services and dashboards for lifecycle assessments and supply-chain transparency. Designed REST APIs, optimized database schemas, and integrated third-party services to ensure consistent and reliable data flow across sustainability modules.",
   },
   {
     title: "LOGAC – Vendor & Route Optimization System",
-    problem: "Manual vendor management and inefficient route planning.",
+    problem:
+      "Vendor management and route planning relied heavily on manual processes, leading to inefficient logistics decisions and increased operational overhead.",
     solution:
-      "Automated business logic and optimized routing using backend-driven algorithms.",
+      "Automated business logic and supported optimized routing through backend-driven algorithms and APIs.",
     tech: ["Node.js", "Express", "Python", "PostgreSQL", "Sequelize"],
     details:
-      "Created business algorithms using Python and built REST APIs with Express.js. Managed complex data models via Sequelize ORM for vendor and logistics optimization.",
+      "Implemented business algorithms using Python and built REST APIs with Express.js. Designed and maintained relational data models using Sequelize ORM to support vendor coordination and logistics optimization workflows.",
   },
   {
     title: "ELSA – Initiative & Integration Platform",
-    problem: "Unstable integrations and broken modules affected delivery.",
-    solution: "Stabilized integrations and fixed full-stack issues.",
+    problem:
+      "Frequent integration issues and unstable modules slowed feature delivery and increased ongoing maintenance effort.",
+    solution:
+      "Stabilized integrations and resolved full-stack issues to improve platform reliability.",
     tech: ["React", "Node.js", "Express", "PostgreSQL", "Sequelize"],
     details:
-      "Resolved full-stack issues in integrations and initiatives modules, improving API stability, frontend reliability, and overall system consistency.",
+      "Resolved full-stack issues across integrations and initiatives modules. Improved API error handling, database interactions, and frontend stability to enable smoother and more reliable feature releases.",
   },
   {
     title: "VOLVO – CRM System",
-    problem: "Lack of centralized system for service and sales tracking.",
-    solution: "Developed CRM modules for automotive operations.",
+    problem:
+      "Service and sales data was distributed across tools, limiting visibility and operational efficiency for automotive teams.",
+    solution:
+      "Developed centralized CRM modules for service and sales tracking.",
     tech: ["React", "Node.js", "PostgreSQL", "Sequelize"],
     details:
-      "Led CRM development for tracking automotive service and sales operations, focusing on modular architecture and data consistency.",
+      "Led development of CRM modules using React and Node.js, focusing on clean data models, consistent APIs, and maintainable architecture to support automotive service and sales operations.",
   },
   {
-    title: "Green Story – Sustainability Platform",
-    problem: "Brands lacked visibility into lifecycle and sustainability data.",
+    title: "Walking and Talking – Collaboration Platform",
+    problem:
+      "Production bugs and missing backend features were impacting user experience on an active collaboration platform.",
     solution:
-      "Built backend services and dashboards for lifecycle assessment and traceability.",
-    tech: ["Node.js", "NestJS", "Next.js", "TypeORM", "PostgreSQL"],
+      "Stabilized the backend and delivered incremental feature improvements.",
+    tech: ["Python", "Django", "MySQL", "React", "Ionic"],
     details:
-      "Worked on sustainability-focused tools for lifecycle assessments and supply-chain transparency. Developed APIs, data models, dashboards, and integrated third-party services for enterprise clients.",
+      "Worked on a Django-based backend to fix production issues and add new features. Improved reliability of existing modules while supporting ongoing enhancements for collaboration workflows.",
   },
   {
     title: "Vantaan Taksi – Booking Management System",
-    problem: "Operational inefficiencies in travel booking workflows.",
-    solution: "Improved backend and frontend booking flows.",
+    problem:
+      "Operational inefficiencies in booking and management workflows affected daily travel operations.",
+    solution:
+      "Improved backend APIs and frontend flows for booking management.",
     tech: ["React", "Node.js", "MySQL", "Sequelize"],
     details:
-      "Improved booking and management services by enhancing backend APIs and frontend workflows.",
+      "Enhanced booking and management services by improving backend APIs and frontend workflows, resulting in more reliable travel booking operations.",
   },
   {
     title: "HSDS – Education Management System",
-    problem: "Manual handling of course and student data.",
-    solution: "Built backend and frontend modules for data management.",
+    problem:
+      "Course and student data was managed manually, increasing errors and administrative effort.",
+    solution:
+      "Built structured backend and frontend modules for data management.",
     tech: ["React", "Node.js"],
     details:
-      "Designed and implemented backend and frontend modules for managing course and student data.",
+      "Designed and implemented backend and frontend modules to manage course and student data efficiently, improving data consistency and usability.",
   },
   {
     title: "Dizpatch – Travel Booking Mobile App",
-    problem: "Need for real-time updates in mobile travel bookings.",
-    solution: "Built real-time UI and booking features.",
-    tech: ["React Native"],
+    problem:
+      "Users needed real-time booking updates and a smooth mobile experience.",
+    solution:
+      "Delivered real-time booking features with a responsive mobile UI.",
+    tech: ["React Native", "Firebase"],
     details:
-      "Developed mobile UI and real-time booking features using React Native and Firebase.",
+      "Developed mobile UI and real-time booking features using React Native and Firebase, focusing on performance, real-time updates, and user-friendly travel workflows.",
   },
   {
-    title: "Cyber Friend – Privacy-Focused App",
-    problem: "Users needed a secure and privacy-focused mobile application.",
-    solution: "Built secure mobile features with real-time backend.",
-    tech: ["Flutter"],
+    title: "Cyber Friend – Privacy-Focused Mobile App",
+    problem:
+      "Users required a secure and privacy-focused mobile application.",
+    solution:
+      "Implemented secure mobile features backed by real-time services.",
+    tech: ["Flutter", "Firebase"],
     details:
-      "Developed a secure and privacy-focused mobile application using Flutter and Firebase.",
+      "Developed a secure and privacy-focused mobile application using Flutter and Firebase, with emphasis on data protection and real-time functionality.",
   },
   {
     title: "Gold Bank – Fintech & E-commerce Platform",
-    problem: "Need for a modern e-commerce and banking-style frontend.",
-    solution: "Built dynamic frontend and backend services.",
+    problem:
+      "The platform required a modern frontend and reliable backend services for fintech-style user flows.",
+    solution:
+      "Built dynamic frontend components and backend services.",
     tech: ["React", "Next.js", "Node.js"],
     details:
-      "Worked on e-commerce backend services and dynamic frontend for a fintech-style web platform.",
+      "Worked on e-commerce backend services and dynamic frontend components to support fintech-style workflows and user interactions.",
   },
   {
     title: "Ahmedia Restaurant – Food Ordering System",
-    problem: "No unified system for food ordering across mobile and web.",
-    solution: "Built end-to-end food ordering platform.",
+    problem:
+      "Lack of a unified system for food ordering across mobile and web platforms.",
+    solution:
+      "Built an end-to-end food ordering platform.",
     tech: ["Node.js", "Flutter", "React", "MySQL"],
     details:
-      "Developed a food ordering system for both mobile and web, including backend APIs and user-facing interfaces.",
+      "Developed a complete food ordering system for mobile and web, including backend APIs and user-facing interfaces for ordering and management.",
   },
   {
     title: "HMIS – Pilgrimage Management System",
-    problem: "Manual handling of pilgrimage logistics and bookings.",
-    solution: "Digitized booking and logistics workflows.",
+    problem:
+      "Pilgrimage logistics and bookings were handled manually, making coordination difficult.",
+    solution:
+      "Digitized booking and logistics workflows.",
     tech: ["PHP", "CodeIgniter", "MySQL"],
     details:
-      "Managed pilgrimage logistics, booking modules, and backend workflows for operational efficiency.",
+      "Implemented backend modules for managing pilgrimage logistics and bookings, improving operational efficiency and data organization.",
   },
   {
     title: "POS+ – Billing & Inventory System",
-    problem: "Manual billing and inventory tracking.",
-    solution: "Built POS system with inventory and payments.",
+    problem:
+      "Manual billing and inventory tracking caused inefficiencies and errors.",
+    solution:
+      "Built a POS system with inventory and payment management.",
     tech: ["PHP", "CodeIgniter", "MySQL"],
     details:
-      "Developed a billing, inventory, and payment management system for business operations.",
+      "Developed a billing, inventory, and payment management system to support day-to-day business operations.",
   },
-];
+]
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
