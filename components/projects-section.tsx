@@ -4,40 +4,115 @@ import { useState } from "react"
 import { X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
+
 const projects = [
   {
-    title: "E-Commerce Platform",
-    problem: "Legacy system couldn't handle peak traffic",
-    solution: "Rebuilt with microservices architecture",
-    tech: ["Next.js", "Node.js", "PostgreSQL", "Redis", "AWS"],
+    title: "Walking and Talking – Collaboration Platform",
+    problem: "Production issues and feature gaps in an active platform.",
+    solution: "Fixed bugs and enhanced backend features.",
+    tech: ["Python", "Django", "MySQL", "React", "Ionic"],
     details:
-      "Designed and implemented a scalable e-commerce platform handling 100k+ daily active users. Implemented real-time inventory management and optimized checkout flow reducing cart abandonment by 30%.",
+      "Worked on Django-based backend to fix production issues and add new features for an organization culture and collaboration platform.",
   },
   {
-    title: "Real-Time Analytics Dashboard",
-    problem: "No visibility into business metrics",
-    solution: "Built live dashboard with sub-second updates",
-    tech: ["React", "WebSockets", "ClickHouse", "D3.js"],
+    title: "LOGAC – Vendor & Route Optimization System",
+    problem: "Manual vendor management and inefficient route planning.",
+    solution:
+      "Automated business logic and optimized routing using backend-driven algorithms.",
+    tech: ["Node.js", "Express", "Python", "PostgreSQL", "Sequelize"],
     details:
-      "Created a real-time analytics platform processing millions of events daily. Implemented efficient data pipelines and visualization components for executive decision-making.",
+      "Created business algorithms using Python and built REST APIs with Express.js. Managed complex data models via Sequelize ORM for vendor and logistics optimization.",
   },
   {
-    title: "Mobile Banking App",
-    problem: "Poor user experience on mobile",
-    solution: "Native-feel cross-platform application",
-    tech: ["React Native", "TypeScript", "GraphQL", "Biometrics"],
+    title: "ELSA – Initiative & Integration Platform",
+    problem: "Unstable integrations and broken modules affected delivery.",
+    solution: "Stabilized integrations and fixed full-stack issues.",
+    tech: ["React", "Node.js", "Express", "PostgreSQL", "Sequelize"],
     details:
-      "Developed a secure mobile banking application with biometric authentication, real-time transactions, and offline support. Achieved 4.8+ star rating on app stores.",
+      "Resolved full-stack issues in integrations and initiatives modules, improving API stability, frontend reliability, and overall system consistency.",
   },
   {
-    title: "Content Management System",
-    problem: "Content team blocked by engineering",
-    solution: "Flexible headless CMS with visual editor",
-    tech: ["Next.js", "Sanity", "TypeScript", "Vercel"],
+    title: "VOLVO – CRM System",
+    problem: "Lack of centralized system for service and sales tracking.",
+    solution: "Developed CRM modules for automotive operations.",
+    tech: ["React", "Node.js", "PostgreSQL", "Sequelize"],
     details:
-      "Built a headless CMS enabling content teams to publish independently. Reduced content deployment time from days to minutes while maintaining brand consistency.",
+      "Led CRM development for tracking automotive service and sales operations, focusing on modular architecture and data consistency.",
   },
-]
+  {
+    title: "Green Story – Sustainability Platform",
+    problem: "Brands lacked visibility into lifecycle and sustainability data.",
+    solution:
+      "Built backend services and dashboards for lifecycle assessment and traceability.",
+    tech: ["Node.js", "NestJS", "Next.js", "TypeORM", "PostgreSQL"],
+    details:
+      "Worked on sustainability-focused tools for lifecycle assessments and supply-chain transparency. Developed APIs, data models, dashboards, and integrated third-party services for enterprise clients.",
+  },
+  {
+    title: "Vantaan Taksi – Booking Management System",
+    problem: "Operational inefficiencies in travel booking workflows.",
+    solution: "Improved backend and frontend booking flows.",
+    tech: ["React", "Node.js", "MySQL", "Sequelize"],
+    details:
+      "Improved booking and management services by enhancing backend APIs and frontend workflows.",
+  },
+  {
+    title: "HSDS – Education Management System",
+    problem: "Manual handling of course and student data.",
+    solution: "Built backend and frontend modules for data management.",
+    tech: ["React", "Node.js"],
+    details:
+      "Designed and implemented backend and frontend modules for managing course and student data.",
+  },
+  {
+    title: "Dizpatch – Travel Booking Mobile App",
+    problem: "Need for real-time updates in mobile travel bookings.",
+    solution: "Built real-time UI and booking features.",
+    tech: ["React Native"],
+    details:
+      "Developed mobile UI and real-time booking features using React Native and Firebase.",
+  },
+  {
+    title: "Cyber Friend – Privacy-Focused App",
+    problem: "Users needed a secure and privacy-focused mobile application.",
+    solution: "Built secure mobile features with real-time backend.",
+    tech: ["Flutter"],
+    details:
+      "Developed a secure and privacy-focused mobile application using Flutter and Firebase.",
+  },
+  {
+    title: "Gold Bank – Fintech & E-commerce Platform",
+    problem: "Need for a modern e-commerce and banking-style frontend.",
+    solution: "Built dynamic frontend and backend services.",
+    tech: ["React", "Next.js", "Node.js"],
+    details:
+      "Worked on e-commerce backend services and dynamic frontend for a fintech-style web platform.",
+  },
+  {
+    title: "Ahmedia Restaurant – Food Ordering System",
+    problem: "No unified system for food ordering across mobile and web.",
+    solution: "Built end-to-end food ordering platform.",
+    tech: ["Node.js", "Flutter", "React", "MySQL"],
+    details:
+      "Developed a food ordering system for both mobile and web, including backend APIs and user-facing interfaces.",
+  },
+  {
+    title: "HMIS – Pilgrimage Management System",
+    problem: "Manual handling of pilgrimage logistics and bookings.",
+    solution: "Digitized booking and logistics workflows.",
+    tech: ["PHP", "CodeIgniter", "MySQL"],
+    details:
+      "Managed pilgrimage logistics, booking modules, and backend workflows for operational efficiency.",
+  },
+  {
+    title: "POS+ – Billing & Inventory System",
+    problem: "Manual billing and inventory tracking.",
+    solution: "Built POS system with inventory and payments.",
+    tech: ["PHP", "CodeIgniter", "MySQL"],
+    details:
+      "Developed a billing, inventory, and payment management system for business operations.",
+  },
+];
 
 const containerVariants = {
   hidden: { opacity: 0 },
