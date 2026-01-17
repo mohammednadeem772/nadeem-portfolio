@@ -58,9 +58,9 @@ export function ContactSection() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-5 text-balance">{"Let's Connect"}</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-5 text-balance">{"Get in Touch"}</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg text-balance">
-            Open to meaningful remote opportunities.
+            Open to remote, hybrid, and onsite opportunities, including full-time roles and long-term contracts.
           </p>
         </motion.div>
 
@@ -104,7 +104,7 @@ export function ContactSection() {
           className="flex items-center justify-center gap-2 text-muted-foreground"
         >
           <MapPin size={16} />
-          <span className="text-sm">India | Remote Friendly</span>
+          <span className="text-sm">India · Open to Remote, Hybrid & Onsite Opportunities</span>
         </motion.div>
       </div>
     </section>

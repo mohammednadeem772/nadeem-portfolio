@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { GitBranch, Cpu, Bug, FileCode } from "lucide-react"
-import { motion } from "framer-motion"
+import { GitBranch, Cpu, Bug, FileCode } from "lucide-react";
+import { motion } from "framer-motion";
 
 const mindsets = [
-  { icon: GitBranch, label: "Architecture Thinking" },
-  { icon: Cpu, label: "Scalability & Maintainability" },
-  { icon: Bug, label: "Production Debugging" },
-  { icon: FileCode, label: "Code That Lasts" },
-]
+  { icon: GitBranch, label: "Clean & Maintainable Architecture" },
+  { icon: Cpu, label: "Performance & Scalability Awareness" },
+  { icon: Bug, label: "Production Issue Debugging" },
+  { icon: FileCode, label: "Readable, Long-Term Codebases" },
+];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -19,7 +19,7 @@ const containerVariants = {
       delayChildren: 0.2,
     },
   },
-}
+};
 
 const itemVariants = {
   hidden: { opacity: 0, scale: 0.9, y: 20 },
@@ -32,7 +32,7 @@ const itemVariants = {
       ease: [0.22, 1, 0.36, 1],
     },
   },
-}
+};
 
 export function MindsetSection() {
   return (
@@ -45,7 +45,9 @@ export function MindsetSection() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-5 text-balance">Engineering Mindset</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-5 text-balance">
+            Engineering Mindset
+          </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg text-balance">
             Thinking in systems, not just code.
           </p>
@@ -73,5 +75,5 @@ export function MindsetSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

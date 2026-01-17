@@ -34,7 +34,7 @@ export function ResumeSection() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="text-muted-foreground mb-10 text-lg text-balance"
         >
-          A comprehensive overview of my experience, skills, and achievements.
+          A concise summary of my professional experience, technical skills, and production-level project work.
         </motion.p>
 
         <motion.div

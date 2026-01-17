@@ -1,30 +1,34 @@
-"use client"
+"use client";
 
-import { Layers, Box, Shield, Zap } from "lucide-react"
-import { motion } from "framer-motion"
+import { Layers, Box, Shield, Zap } from "lucide-react";
+import { motion } from "framer-motion";
 
 const values = [
   {
     icon: Layers,
-    title: "Systems over Features",
-    description: "Building cohesive architectures that scale, not isolated functionality.",
+    title: "Systems over Short-Term Fixes",
+    description:
+      "I focus on building maintainable systems with clear architecture rather than quick patches that break later.",
   },
   {
     icon: Box,
-    title: "Production over Prototypes",
-    description: "Code that ships and survives real-world conditions.",
+    title: "Production-Ready Engineering",
+    description:
+      "Experienced in working with live systems—debugging production issues, improving reliability, and shipping stable features.",
   },
   {
     icon: Shield,
-    title: "Ownership over Tasks",
-    description: "End-to-end responsibility from design to deployment.",
+    title: "Ownership & Accountability",
+    description:
+      "I take responsibility across the stack, from understanding requirements to deployment and post-release support.",
   },
   {
     icon: Zap,
-    title: "Reliability over Hype",
-    description: "Proven solutions that stand the test of time.",
+    title: "Practical Solutions over Hype",
+    description:
+      "I choose proven technologies and pragmatic solutions that fit business needs instead of chasing trends.",
   },
-]
+];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -35,7 +39,7 @@ const containerVariants = {
       delayChildren: 0.1,
     },
   },
-}
+};
 
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -47,7 +51,7 @@ const itemVariants = {
       ease: [0.22, 1, 0.36, 1],
     },
   },
-}
+};
 
 export function ValueSection() {
   return (
@@ -60,7 +64,9 @@ export function ValueSection() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="text-center mb-20"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-5 text-balance">Why Work With Me</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-5 text-balance">
+            Why Work With Me
+          </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg text-balance">
             A mindset shaped by years of building systems that matter.
           </p>
@@ -92,7 +98,9 @@ export function ValueSection() {
                   <h3 className="text-lg font-semibold mb-2.5 group-hover:text-primary transition-colors duration-300">
                     {value.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {value.description}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -100,5 +108,5 @@ export function ValueSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

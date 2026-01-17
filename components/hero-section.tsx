@@ -53,7 +53,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="text-xl md:text-2xl lg:text-3xl text-foreground/90 font-light mb-5 text-balance"
         >
-          I design and build scalable production systems.
+          I design and build reliable production systems.
         </motion.p>
 
         <motion.p
@@ -62,7 +62,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
           className="text-base md:text-lg text-muted-foreground mb-12"
         >
-          Senior Full Stack Engineer with 8+ years of real-world experience.
+          Full Stack Developer with 7+ years of experience building and maintaining real-world web and mobile applications.
         </motion.p>
 
         <motion.div
@@ -71,7 +71,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
           className="flex flex-wrap justify-center gap-8 mb-14"
         >
-          {["Production Systems", "Web & Mobile", "End-to-End Ownership"].map((signal, index) => (
+          {["Production Systems", "Web & Mobile Applications", "End-to-End Delivery"].map((signal, index) => (
             <motion.div
               key={signal}
               className="flex items-center gap-2.5 text-sm text-muted-foreground group cursor-default"
